@@ -6,10 +6,10 @@ It is only necessary to complete the is_leap function.
 '''
 def is_leap(year):
     leap = False
-    
-    if (year%4==0 and year%400==0):
-        return true;
-    else:
+   if year%400==0 :
+        leap = True
+    elif year%4 == 0 and year%100 != 0:
+        leap = True
            return leap
 print("Enter the year: ")
 year=int(input())
